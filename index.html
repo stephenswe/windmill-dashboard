@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,14 @@
 </head>
 
 <!-- The body section which determines the entire layout of the webpages/website -->
+
 <body class="bg-white grid grid-cols-[256px_1fr] grid-rows-[auto_5fr] min-h-screen">
     <aside class="row-span-2">
 
         <!-- This section's h1 serves as the logo of the webpage (Windmill) -->
         <h1 class="font-bold my-4 mx-8">Windmill</h1>
 
-        <!-- This nav container houses g the divs controlling the  -->
+        <!-- This nav container houses the divs controlling the naviagation on the aside section in a desktop view  -->
         <nav class="m-8 space-y-6">
             <div>
                 <p> <i class="bi bi-house-door"></i> Dashboard</p>
@@ -44,8 +46,38 @@
             <button class="bg-[#7c3bf5] rounded-md py-2 px-4 text-white">Create account</button>
         </nav>
     </aside>
-    <header class="">Thanks</header>
+
+    <!-- The header section of the webpage -->
+    <header class="flex items-center justify-between">
+        <div class="flex items-center justify-center m-3 ml-25">
+            <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                    <i class="bi bi-search text-[#7c3bf5]"></i>
+                </span>
+                <input class=" border border-gray-200 w-150 px-8 py-1 rounded-md" type="text"
+                    placeholder="search for projects" id="search">
+            </div>
+        </div>
+        <div class="flex items-end justify-end space-x-5 mx-3">
+            <div>
+                <span class="">
+                    <i class="bi bi-moon text-[#7c3bf5]"></i>
+                </span>
+
+            </div>
+            <div>
+                <span class="">
+                    <i class="bi bi-bell-fill text-[#7c3bf5]"></i>
+                </span>
+            </div>
+            <div>
+                <img src="./assets/images/Nurse.jpg.jpeg" class="h-7 w-7 rounded-3xl">
+            </div>
+        </div>
+
+    </header>
     <main class=""></main>
-    
+
 </body>
+
 </html>
